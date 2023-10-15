@@ -1,3 +1,4 @@
+import Feed from '@/components/Feed';
 import React from 'react'
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       </h1>
       <p className='desc text-center'>Your go-to place for code snippets - share, learn, and code.</p>
       {/* Feed section */}
+      <Feed />
     </section>
   )
 }

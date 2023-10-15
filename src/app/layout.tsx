@@ -1,6 +1,7 @@
 import React, { FC, PropsWithChildren } from "react";
 import "@/styles/globals.css";
 import { Metadata } from "next";
+import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
   title: "snippify",
@@ -35,10 +36,14 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
         />
       </head>
       <body>
+
         <div className="main">
           <div className="gradient" />
         </div>
-        <main className="app">{children}</main>
+        <main className="app">
+          <Nav />
+          {children}
+        </main>
       </body>
     </html>
   );
